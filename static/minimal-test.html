@@ -2,21 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title>Test input event</title>
+        <title>Test video with some sound</title>
     </head>
     <body>
-        <input id="test-input"/>
+        <iframe id="ytvideo" width="560" height="315" src="https://www.youtube.com/embed/Y-YQ_XqestI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
-    <script>
-        var elem = window.document.getElementById('test-input');
-        elem.addEventListener('keydown', (event) => {
-            console.log(`trigerred event show from static/html file ! 
-                received key: '${event.keyCode}'
-                is instanceof  KeyboardEvent ? : (${event instanceof KeyboardEvent})
-                event type: (${event.type})
-                event constructor: ${event.constructor}
-                event object: 
-            `, event);
-        });
-    </script>
 </html>
