@@ -13,7 +13,10 @@ cache:
   directories:
     # we also need to cache folder with Cypress binary
     - ~/.cache
+
 install:
   - npm install -D
+
 script:
+  - echo -e 'pcm.!default {\n type hw\n card 0\n}\n\nctl.!default {\n type hw\n card 0\n}' > ~/.asoundrc
   - npm run cypress:run
