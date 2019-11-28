@@ -1,4 +1,4 @@
-# cypress-test-tiny-event-bug
+# cypress-test-tiny-failed-stereo-recording
 
 > Tiny Cypress E2E test case
 
